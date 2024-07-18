@@ -11504,14 +11504,14 @@ pre .code {
 
 .header {
  
-  height: 100vh;
+  height: 70vh;
   
   background-image:url(../imgs/header.jpg);
 
   background-size: cover;
   background-position: 70%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   
 }
 
