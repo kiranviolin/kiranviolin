@@ -41,6 +41,9 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#videos" class="nav-link">Videos</a>
+                    </li>
                     
                 </ul>
                 <ul class="navbar-nav brand">
@@ -68,7 +71,7 @@
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <p class="mt-20">Kiran Violin is an Indian musician, composer, and violinist from Kerala. Kiran Violin was born in Ernakulam (November 1999), Kerala. He started learning Carnatic music under Satheesan Nellai.</p>
+                    <p class="mt-20">Kiran Violin is an Indian musician, composer, and violinist from Kerala. Kiran Violin was born in Ernakulam (November 1999), Kerala. He started learning Carnatic music under Satheeshan Nellai.</p>
                     <li><span>Email</span> : kiransankar5472@gmail.com</li>
                     <li><span>Phone</span> : +918086980338</li>
 
@@ -117,6 +120,58 @@
         </div>
     </section>
 -->
+<section class=" bg-custom-gray" id="videos">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Videos</h1>
+        <div class="videos" style="border: 10px;">
+            <div class="row" >
+        
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="o2O5Fl99q4g"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/o2O5Fl99q4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="IS8_wrpv10k"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/IS8_wrpv10k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="SlGAUI-y9hE"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/SlGAUI-y9hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="Cgbo8WgnS48"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/Cgbo8WgnS48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="VrZJi6vX0B4"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/VrZJi6vX0B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-xl-4" style="margin-bottom: 8px;">
+                    <div class="video-gallery">
+                    <a href="javascript:void(0);" class="youtube-link" youtubeid="7fl4NawOB0M"></a>
+                        <iframe width="100%" height="220" src="https://www.youtube.com/embed/7fl4NawOB0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
@@ -362,7 +417,7 @@
             </p>
         </div>
     </footer>
-
+    
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -378,6 +433,16 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+
+    <link rel="stylesheet" href="files/youtube-popup.css">
+    <link rel="stylesheet" href="files/grt-youtube-popup.css">
+    <script src="files/grt-youtube-popup.js"></script>
+    <script>
+        $(".youtube-link").grtyoutube({
+            autoplay:true,
+            theme:"dark"
+        });
+    </script>
 
 </body>
 </html>
