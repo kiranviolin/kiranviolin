@@ -155,7 +155,10 @@
 			var mes = today.getMonth() + 1;
 			var dia = today.getDate();
 			var fecha = dia + "-" + mes + "-" + year;
+			lastDigit = year % 100;
+			var fecha2 = "#kv" + dia + mes + lastDigit; 
 			document.getElementById("currentDate").innerHTML = fecha;
+			document.getElementById("currentInvoice").innerHTML = fecha2;
 
 
 			$(document).on('click', '.btn_print', function (event) {
@@ -175,7 +178,7 @@
 				//more custom settings
 				var opt =
 				{
-					margin: 0.2,
+					
 					filename: 'kiran_violin_' + js.AutoCode() + '.pdf',
 					image: { type: 'jpeg', quality: 0.98 },
 					html2canvas: { scale: 2 },
@@ -222,7 +225,7 @@
 						<table>
 							<tr>
 								<td style="text-align: right;">
-									Invoice : #kv389<br />
+									Invoice : <brr id="currentInvoice"></brr><br />
 									Date : <b id="currentDate"></b><br />
 								</td>
 							</tr>
@@ -259,6 +262,17 @@
 					</td>
 				</tr>
 			-->
+				<tr class="heading">
+					<td>Name and Contact</td>
+
+					<td style="text-align: left">Program Category</td>
+				</tr>
+
+				<tr class="details">
+					<td><input type="text" class="form-control" id="search"></td>
+
+					<td ><input type="text" class="form-control" id="search" ></td>
+				</tr>
 				<tr class="heading">
 					<td>Program Date</td>
 
@@ -302,9 +316,7 @@
 				<tr class=" form-group">
 					<td colspan="2"><input type="text" class="form-control" id="search"></td>
 				</tr>
-				<tr class=" form-group">
-					<td colspan="2"><input type="text" class="form-control" id="search"></td>
-				</tr>
+	
 
 				<tr class="">
 					<td></td>
